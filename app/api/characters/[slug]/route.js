@@ -17,7 +17,7 @@ export async function GET(req, { params }) {
     const character = characters.data.find(item => item.slug === params.slug)
 
     if (!character) {
-      return new NextResponse('not found', { status: 404 })
+      return null
     }
 
     const character_qoutes = qoutes.data.filter(
