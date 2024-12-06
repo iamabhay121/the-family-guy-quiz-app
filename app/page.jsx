@@ -10,7 +10,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getAllCharacters } from '@/lib/characters'
 
-
 export default async function Page() {
   const data = await getAllCharacters()
 
@@ -31,7 +30,7 @@ export default async function Page() {
                 width={500}
                 height={500}
               />
-              </Link>
+            </Link>
           )
         })}
       </Container>
